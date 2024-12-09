@@ -1,0 +1,193 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+
+local Window = OrionLib:MakeWindow({
+    Name = "🧀Cheese Escape Hack V1🧀",
+    HidePremium = false,
+    SaveConfig = true,
+    ConfigFolder = "CheeseEscapeHack"
+})
+
+local HomeTab = Window:MakeTab({
+    Name = "🏠Home🏠",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+OrionLib:MakeNotification({
+    Name = "Script Executed!",
+    Content = "Cheese🧀 (soon script for 2 chapter)",
+    Image = "rbxassetid://4483345998",
+    Time = 5
+})
+
+HomeTab:AddSlider({
+    Name = "Walkspeed",
+    Min = 0,
+    Max = 100,
+    Default = 16,
+    Color = Color3.fromRGB(255, 255, 255),
+    Increment = 1,
+    ValueName = "Speed",
+    Callback = function(Value)
+        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = Value
+    end
+})
+
+local TeleportTab = Window:MakeTab({
+    Name = "🔀Teleports",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+TeleportTab:AddButton({
+    Name = "Green Key🔑",
+    Callback = function()
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-276.12860107421875, 4.19329309463501, -29.6594181060791)
+    end
+})
+
+TeleportTab:AddButton({
+    Name = "Red Key🔑",
+    Callback = function()
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(45.87752914428711, 4.000003337860107, -453.5269470214844)
+    end
+})
+
+TeleportTab:AddButton({
+    Name = "Blue Key🔑",
+    Callback = function()
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-110.92562103271484, 46.89999771118164, -80.44975280761719)
+    end
+})
+
+TeleportTab:AddButton({
+    Name = "Cheese 1🧀",
+    Callback = function()
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-270.7794189453125, 4.193293571472168, -16.05525016784668)
+    end
+})
+
+TeleportTab:AddButton({
+    Name = "Cheese 2🧀",
+    Callback = function()
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-254.29400634765625, 48.5, -162.4864501953125)
+    end
+})
+
+TeleportTab:AddButton({
+    Name = "Cheese 3🧀",
+    Callback = function()
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(47.144981384277344, 4.000003814697266, -452.4217529296875)
+    end
+})
+
+TeleportTab:AddButton({
+    Name = "Cheese 4🧀",
+    Callback = function()
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-146.45925903320312, 4.19329309463501, -224.740478515625)
+    end
+})
+
+TeleportTab:AddButton({
+    Name = "Cheese 5🧀",
+    Callback = function()
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-272.5539245605469, 48.5, -208.4808349609375)
+    end
+})
+
+TeleportTab:AddButton({
+    Name = "Cheese 6🧀",
+    Callback = function()
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(35.81821823120117, 24.5, -22.245771408081055)
+    end
+})
+
+TeleportTab:AddButton({
+    Name = "Cheese 7🧀",
+    Callback = function()
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-268.9044189453125, 4.193294048309326, -53.9423942565918)
+    end
+})
+
+TeleportTab:AddButton({
+    Name = "Cheese 8🧀",
+    Callback = function()
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-276.4776916503906, 4.193294048309326, -150.31460571289062)
+    end
+})
+
+TeleportTab:AddButton({
+    Name = "Cheese 9🧀",
+    Callback = function()
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-139.05931091308594, 4.193294048309326, -162.3167724609375)
+    end
+})
+
+local RemoveTab = Window:MakeTab({
+    Name = "🚫Removed",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+RemoveTab:AddButton({
+    Name = "Remove Rat",
+    Callback = function()
+        game.Workspace.Mouse:Destroy()
+    end
+})
+
+RemoveTab:AddButton({
+    Name = "Remove Click Door",
+    Callback = function()
+        game.Workspace.Door:Destroy()
+    end
+})
+
+local ToolTab = Window:MakeTab({
+    Name = "🔨Tools Giver",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+ToolTab:AddButton({
+    Name = "Red Cheese",
+    Callback = function()
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-12.932647705078125, 4.999999523162842, -103.4333724975586)
+    end
+})
+
+ToolTab:AddButton({
+    Name = "Bloxy Cola",
+    Callback = function()
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(62.88954544067383, 4.000003814697266, -456.58636474609375)
+    end
+})
+
+local EspTab = Window:MakeTab({
+    Name = "👁️ESP",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+EspTab:AddButton({
+    Name = "Glow Mouse",
+    Callback = function()
+        local mouse = game.Workspace:FindFirstChild("Mouse")
+        if mouse then
+            local existingHighlight = mouse:FindFirstChildOfClass("Highlight")
+            if not existingHighlight then
+                local highlight = Instance.new("Highlight")
+                highlight.Parent = mouse
+                highlight.Adornee = mouse
+                highlight.FillColor = Color3.new(0, 1, 0) 
+                highlight.OutlineColor = Color3.new(1, 1, 1) 
+                highlight.FillTransparency = 0.3 
+                highlight.OutlineTransparency = 0 
+            else
+                existingHighlight:Destroy() 
+            end
+        end
+    end
+})
+
+OrionLib:Init()
