@@ -1,7 +1,7 @@
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 
 local Window = OrionLib:MakeWindow({
-    Name = "🧀Cheese Escape Hack V1.3🧀",
+    Name = "🧀Cheese Escape Hack V1.7🧀",
     HidePremium = false,
     SaveConfig = true,
     ConfigFolder = "CheeseEscapeHack"
@@ -14,8 +14,8 @@ local HomeTab = Window:MakeTab({
 })
 
 OrionLib:MakeNotification({
-    Name = "Script Executed!",
-    Content = "Cheese🧀 (soon script for 2 chapter)",
+    Name = "Script Is Ready!",
+    Content = "Cheese🧀",
     Image = "rbxassetid://4483345998",
     Time = 5
 })
@@ -54,9 +54,30 @@ TeleportTab:AddButton({
 })
 
 TeleportTab:AddButton({
+    Name = "White Key🔑",
+    Callback = function()
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-14.137266159057617, 4.999999046325684, -74.23345947265625)
+    end
+})
+
+TeleportTab:AddButton({
     Name = "Blue Key🔑",
     Callback = function()
         game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-110.92562103271484, 46.89999771118164, -80.44975280761719)
+    end
+})
+
+TeleportTab:AddButton({
+    Name = "Yellow Key🔑",
+    Callback = function()
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(49.8089485168457, 27.000001907348633, -482.6764831542969)
+    end
+})
+
+TeleportTab:AddButton({
+    Name = "Purple Key🔑",
+    Callback = function()
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-277.8551940917969, 122.19331359863281, 496.23931884765625)
     end
 })
 
